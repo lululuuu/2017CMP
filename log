@@ -1,0 +1,273 @@
+Cycle:2
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 2   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 0, miss: 1
+
+[PPE]
+tag: 47  -1  
+LRU: 2   -1  
+hit: 0, miss: 1
+
+[Access] PA:12, tag+index: 3, index: 3
+
+[Cache] (asso: 1)
+[victim]cache_seek:3
+MRU:0   0   0   0   
+tag:-1  -1  -1  3   
+hit: 0, miss: 1, 
+Cycle:3
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 47  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 2   3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 0, miss: 2
+
+[PPE]
+tag: 47  0   
+LRU: 2   3   
+hit: 0, miss: 2
+
+[Access] PA:16, tag+index: 4, index: 0
+
+[Cache] (asso: 1)
+[victim]cache_seek:0
+MRU:0   0   0   0   
+tag:4   -1  -1  3   
+hit: 0, miss: 2, 
+Cycle:8
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 47  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 8   3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 1, miss: 2
+
+[PPE]
+tag: 47  0   
+LRU: 2   3   
+hit: 0, miss: 2
+
+[Access] PA:8, tag+index: 2, index: 2
+
+[Cache] (asso: 1)
+[victim]cache_seek:2
+MRU:0   0   0   0   
+tag:4   -1  2   3   
+hit: 0, miss: 3, 
+Cycle:9
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 47  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 9   3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 2, miss: 2
+
+[PPE]
+tag: 47  0   
+LRU: 2   3   
+hit: 0, miss: 2
+
+[Access] PA:4, tag+index: 1, index: 1
+
+[Cache] (asso: 1)
+[victim]cache_seek:1
+MRU:0   0   0   0   
+tag:4   1   2   3   
+hit: 0, miss: 4, 
+Cycle:15
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 47  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 15  3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 3, miss: 2
+
+[PPE]
+tag: 47  0   
+LRU: 2   3   
+hit: 0, miss: 2
+
+[Access] PA:0, tag+index: 0, index: 0
+
+[Cache] (asso: 1)
+[victim]cache_seek:0
+MRU:0   0   0   0   
+tag:0   1   2   3   
+hit: 0, miss: 5, 
+Cycle:16
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 46  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 16  3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 3, miss: 3
+
+[PPE]
+tag: 46  0   
+LRU: 16  3   
+hit: 0, miss: 3
+
+[Access] PA:12, tag+index: 3, index: 3
+
+[Cache] (asso: 1)
+[victim]cache_seek:3
+MRU:0   0   0   0   
+tag:-1  -1  -1  3   
+hit: 0, miss: 6, 
+Cycle:23
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 46  0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 23  3   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 4, miss: 3
+
+[PPE]
+tag: 46  0   
+LRU: 16  3   
+hit: 0, miss: 3
+
+[Access] PA:12, tag+index: 3, index: 3
+
+[Cache] (asso: 1)
+[victim]cache_seek:3
+MRU:0   0   0   0   
+tag:-1  -1  -1  3   
+hit: 1, miss: 6, 
+Cycle:24
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 46  47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 23  24  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 4, miss: 4
+
+[PPE]
+tag: 46  47  
+LRU: 16  24  
+hit: 0, miss: 4
+
+[Access] PA:16, tag+index: 4, index: 0
+
+[Cache] (asso: 1)
+[victim]cache_seek:0
+MRU:0   0   0   0   
+tag:4   -1  -1  3   
+hit: 1, miss: 7, 
+Cycle:28
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 46  47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 23  28  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 5, miss: 4
+
+[PPE]
+tag: 46  47  
+LRU: 16  24  
+hit: 0, miss: 4
+
+[Access] PA:20, tag+index: 5, index: 1
+
+[Cache] (asso: 1)
+[victim]cache_seek:1
+MRU:0   0   0   0   
+tag:4   5   -1  3   
+hit: 1, miss: 8, 
+Cycle:29
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 46  47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 23  29  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 6, miss: 4
+
+[PPE]
+tag: 46  47  
+LRU: 16  24  
+hit: 0, miss: 4
+
+[Access] PA:24, tag+index: 6, index: 2
+
+[Cache] (asso: 1)
+[victim]cache_seek:2
+MRU:0   0   0   0   
+tag:4   5   6   3   
+hit: 1, miss: 9, 
+Cycle:33
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 0   47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 33  29  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 6, miss: 5
+
+[PPE]
+tag: 0   47  
+LRU: 33  24  
+hit: 0, miss: 5
+
+[Access] PA:4, tag+index: 1, index: 1
+
+[Cache] (asso: 1)
+[victim]cache_seek:1
+MRU:0   0   0   0   
+tag:4   1   6   -1  
+hit: 1, miss: 10, 
+Cycle:34
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 0   47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 33  34  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 7, miss: 5
+
+[PPE]
+tag: 0   47  
+LRU: 33  24  
+hit: 0, miss: 5
+
+[Access] PA:28, tag+index: 7, index: 3
+
+[Cache] (asso: 1)
+[victim]cache_seek:3
+MRU:0   0   0   0   
+tag:4   1   6   7   
+hit: 1, miss: 11, 
+Cycle:36
+---------------------------------------------------
+[TLB]
+tag: [TLB]
+tag: 0   47  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+PPN: 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+LRU: 36  34  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  
+hit: 8, miss: 5
+
+[PPE]
+tag: 0   47  
+LRU: 33  24  
+hit: 0, miss: 5
+
+[Access] PA:4, tag+index: 1, index: 1
+
+[Cache] (asso: 1)
+[victim]cache_seek:1
+MRU:0   0   0   0   
+tag:4   1   6   7   
+hit: 2, miss: 11, 
